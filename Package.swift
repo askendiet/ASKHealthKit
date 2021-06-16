@@ -16,6 +16,10 @@ let package = Package(
         .target(
             name: "ASKHealthKit",
             dependencies: [],
-            path: "Source")
+            path: "Source"),
+        .testTarget(
+            name: "ASKHealthKitTests",
+            dependencies: ["ASKHealthKit"],
+            path: "Tests")
     ]
 )
