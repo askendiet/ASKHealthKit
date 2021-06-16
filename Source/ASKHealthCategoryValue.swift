@@ -92,7 +92,7 @@ public struct ASKHealthCategoryValue {
         private let healthKitValue: HKCategoryValueOvulationTestResult
 
         public static let negative = OvulationTestResult(rawValue: HKCategoryValueOvulationTestResult.negative.rawValue)
-        public static let positive = OvulationTestResult(rawValue: HKCategoryValueOvulationTestResult.positive.rawValue)
+        public static let positive = OvulationTestResult(rawValue: HKCategoryValueOvulationTestResult.luteinizingHormoneSurge.rawValue)
         public static let indeterminate = OvulationTestResult(rawValue: HKCategoryValueOvulationTestResult.indeterminate.rawValue)
 
         public init(rawValue: Int) {

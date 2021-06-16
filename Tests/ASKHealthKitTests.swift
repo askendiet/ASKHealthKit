@@ -15,13 +15,8 @@ class ASKHealthKitTests: XCTestCase {
     let start = Date(timeIntervalSinceNow: -(60 * 10))
 
     func testNutrientItems() {
-        let energy = EnergyIntake(value: Int(quantity), unit: .kilocalorie, time: now)
+        let energy = EnergyIntake(value: quantity, unit: .kilocalorie, time: now)
         XCTAssertEqual(energy.time, now)
-        XCTAssertEqual(energy.date.start, now)
-        XCTAssertEqual(energy.date.end, now)
-        XCTAssertEqual(energy.value, Int(quantity))
-        XCTAssertEqual(energy.hkSamples.count, 1)
-        XCTAssertEqual(energy.hkSamples[0].endDate, now)
     }
 
 //    func testActivityItems() {
