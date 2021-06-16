@@ -18,7 +18,7 @@ internal protocol QuantitySampleConvertible {
     var rawUnit: HKUnit { get }
 }
 internal extension QuantitySampleConvertible {
-    internal var sample: HKQuantitySample? {
+    var sample: HKQuantitySample? {
         guard let id = Self.id.rawValue as? HKQuantityTypeIdentifier,
               let type = HKQuantityType.quantityType(forIdentifier: id) else {
             return nil
