@@ -10,3 +10,4 @@ https://github.com/askendiet/ASKHealthKit.git
 ```
 
 # License
+This library is released under the MIT license. See [LICENSE](https://github.com/askendiet/ASKHealthKit/blob/master/LICENSE) for details.
